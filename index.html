@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Reading Calendar Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bible Reading Calendar Generator</h1>
+            <p>Create a personalized Bible reading plan with daily reminders</p>
+        </header>
+
+        <main>
+            <section class="config-section">
+                <h2>Configure Your Reading Plan</h2>
+                
+                <div class="date-selection">
+                    <div class="date-input">
+                        <label for="startDate">Start Date:</label>
+                        <input type="date" id="startDate" required>
+                    </div>
+                    <div class="date-input">
+                        <label for="endDate">End Date:</label>
+                        <input type="date" id="endDate" required>
+                    </div>
+                </div>
+
+                <div class="book-selection">
+                    <h3>Select Books to Read</h3>
+                    <div class="quick-select">
+                        <button class="quick-btn" data-select="all">Entire Bible</button>
+                        <button class="quick-btn" data-select="ot">Old Testament</button>
+                        <button class="quick-btn" data-select="nt">New Testament</button>
+                        <button class="quick-btn" data-select="clear">Clear All</button>
+                    </div>
+
+                    <div class="book-categories">
+                        <div class="category" id="law">
+                            <h4>Law</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="history">
+                            <h4>History</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="wisdom">
+                            <h4>Wisdom/Poetry</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="majorProphets">
+                            <h4>Major Prophets</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="minorProphets">
+                            <h4>Minor Prophets</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="gospels">
+                            <h4>Gospels</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="ntHistory">
+                            <h4>NT History</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="epistles">
+                            <h4>Epistles</h4>
+                            <div class="book-list"></div>
+                        </div>
+                        <div class="category" id="prophecy">
+                            <h4>Prophecy</h4>
+                            <div class="book-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="generateBtn" class="primary-btn">Generate Calendar</button>
+                </div>
+            </section>
+
+            <section class="results-section" style="display: none;">
+                <h2>Your Bible Reading Calendar</h2>
+                <div class="summary"></div>
+                <div class="export-buttons">
+                    <button id="exportICS" class="export-btn">Export to Calendar (.ics)</button>
+                    <button id="printView" class="export-btn">Print View</button>
+                </div>
+                <div id="calendarDisplay" class="calendar-display"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Bible Reading Calendar Generator - Read through the Bible systematically</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

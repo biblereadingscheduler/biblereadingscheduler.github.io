@@ -1,0 +1,397 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+
+/* Configuration section */
+.config-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.config-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Date selection */
+.date-selection {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.date-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.date-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+.date-input input[type="date"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Book selection */
+.book-selection h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.quick-select {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.quick-btn {
+    padding: 8px 16px;
+    border: 1px solid #3498db;
+    background-color: #fff;
+    color: #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.quick-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Book categories */
+.book-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.category {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.category h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.book-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.book-item label {
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    flex: 1;
+}
+
+.book-item label:hover {
+    color: #3498db;
+}
+
+/* Action buttons */
+.action-buttons {
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #229954;
+}
+
+/* Results section */
+.results-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.results-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.summary ul {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.summary li {
+    margin-bottom: 5px;
+}
+
+/* Export buttons */
+.export-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.export-btn {
+    padding: 10px 20px;
+    border: 1px solid #3498db;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.export-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Calendar display */
+.calendar-display {
+    display: grid;
+    gap: 30px;
+}
+
+.month-view {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.month-view h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+}
+
+.day-header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.calendar-day {
+    background-color: #fff;
+    min-height: 80px;
+    padding: 8px;
+    position: relative;
+}
+
+.calendar-day.empty {
+    background-color: #f8f9fa;
+}
+
+.day-number {
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.day-reading {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.calendar-day.has-reading {
+    background-color: #e8f5e9;
+}
+
+.calendar-day.has-reading:hover {
+    background-color: #c8e6c9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: #fff;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    header {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    
+    .config-section {
+        display: none;
+    }
+    
+    .export-buttons {
+        display: none;
+    }
+    
+    .results-section {
+        box-shadow: none;
+        padding: 20px;
+    }
+    
+    .month-view {
+        page-break-inside: avoid;
+        margin-bottom: 20px;
+    }
+    
+    .calendar-day {
+        min-height: 60px;
+        font-size: 10px;
+    }
+    
+    .day-reading {
+        font-size: 9px;
+    }
+    
+    footer {
+        display: none;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .date-selection {
+        flex-direction: column;
+    }
+    
+    .book-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .export-buttons {
+        flex-direction: column;
+    }
+    
+    .calendar-grid {
+        font-size: 12px;
+    }
+    
+    .calendar-day {
+        min-height: 60px;
+        padding: 4px;
+    }
+    
+    .day-reading {
+        font-size: 9px;
+    }
+}
