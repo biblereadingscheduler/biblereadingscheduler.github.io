@@ -1,88 +1,88 @@
 // Bible data with all books and their chapter counts
 const bibleData = {
     law: [
-        { name: "Genesis", chapters: 50 },
-        { name: "Exodus", chapters: 40 },
-        { name: "Leviticus", chapters: 27 },
-        { name: "Numbers", chapters: 36 },
-        { name: "Deuteronomy", chapters: 34 }
+        { name: "Genesis", chapters: 50, verses: verseData["Genesis"] },
+        { name: "Exodus", chapters: 40, verses: verseData["Exodus"] },
+        { name: "Leviticus", chapters: 27, verses: verseData["Leviticus"] },
+        { name: "Numbers", chapters: 36, verses: verseData["Numbers"] },
+        { name: "Deuteronomy", chapters: 34, verses: verseData["Deuteronomy"] }
     ],
     history: [
-        { name: "Joshua", chapters: 24 },
-        { name: "Judges", chapters: 21 },
-        { name: "Ruth", chapters: 4 },
-        { name: "1 Samuel", chapters: 31 },
-        { name: "2 Samuel", chapters: 24 },
-        { name: "1 Kings", chapters: 22 },
-        { name: "2 Kings", chapters: 25 },
-        { name: "1 Chronicles", chapters: 29 },
-        { name: "2 Chronicles", chapters: 36 },
-        { name: "Ezra", chapters: 10 },
-        { name: "Nehemiah", chapters: 13 },
-        { name: "Esther", chapters: 10 }
+        { name: "Joshua", chapters: 24, verses: verseData["Joshua"] },
+        { name: "Judges", chapters: 21, verses: verseData["Judges"] },
+        { name: "Ruth", chapters: 4, verses: verseData["Ruth"] },
+        { name: "1 Samuel", chapters: 31, verses: verseData["1 Samuel"] },
+        { name: "2 Samuel", chapters: 24, verses: verseData["2 Samuel"] },
+        { name: "1 Kings", chapters: 22, verses: verseData["1 Kings"] },
+        { name: "2 Kings", chapters: 25, verses: verseData["2 Kings"] },
+        { name: "1 Chronicles", chapters: 29, verses: verseData["1 Chronicles"] },
+        { name: "2 Chronicles", chapters: 36, verses: verseData["2 Chronicles"] },
+        { name: "Ezra", chapters: 10, verses: verseData["Ezra"] },
+        { name: "Nehemiah", chapters: 13, verses: verseData["Nehemiah"] },
+        { name: "Esther", chapters: 10, verses: verseData["Esther"] }
     ],
     wisdom: [
-        { name: "Job", chapters: 42 },
-        { name: "Psalms", chapters: 150 },
-        { name: "Proverbs", chapters: 31 },
-        { name: "Ecclesiastes", chapters: 12 },
-        { name: "Song of Solomon", chapters: 8 }
+        { name: "Job", chapters: 42, verses: verseData["Job"] },
+        { name: "Psalms", chapters: 150, verses: verseData["Psalms"] },
+        { name: "Proverbs", chapters: 31, verses: verseData["Proverbs"] },
+        { name: "Ecclesiastes", chapters: 12, verses: verseData["Ecclesiastes"] },
+        { name: "Song of Solomon", chapters: 8, verses: verseData["Song of Solomon"] }
     ],
     majorProphets: [
-        { name: "Isaiah", chapters: 66 },
-        { name: "Jeremiah", chapters: 52 },
-        { name: "Lamentations", chapters: 5 },
-        { name: "Ezekiel", chapters: 48 },
-        { name: "Daniel", chapters: 12 }
+        { name: "Isaiah", chapters: 66, verses: verseData["Isaiah"] },
+        { name: "Jeremiah", chapters: 52, verses: verseData["Jeremiah"] },
+        { name: "Lamentations", chapters: 5, verses: verseData["Lamentations"] },
+        { name: "Ezekiel", chapters: 48, verses: verseData["Ezekiel"] },
+        { name: "Daniel", chapters: 12, verses: verseData["Daniel"] }
     ],
     minorProphets: [
-        { name: "Hosea", chapters: 14 },
-        { name: "Joel", chapters: 3 },
-        { name: "Amos", chapters: 9 },
-        { name: "Obadiah", chapters: 1 },
-        { name: "Jonah", chapters: 4 },
-        { name: "Micah", chapters: 7 },
-        { name: "Nahum", chapters: 3 },
-        { name: "Habakkuk", chapters: 3 },
-        { name: "Zephaniah", chapters: 3 },
-        { name: "Haggai", chapters: 2 },
-        { name: "Zechariah", chapters: 14 },
-        { name: "Malachi", chapters: 4 }
+        { name: "Hosea", chapters: 14, verses: verseData["Hosea"] },
+        { name: "Joel", chapters: 3, verses: verseData["Joel"] },
+        { name: "Amos", chapters: 9, verses: verseData["Amos"] },
+        { name: "Obadiah", chapters: 1, verses: verseData["Obadiah"] },
+        { name: "Jonah", chapters: 4, verses: verseData["Jonah"] },
+        { name: "Micah", chapters: 7, verses: verseData["Micah"] },
+        { name: "Nahum", chapters: 3, verses: verseData["Nahum"] },
+        { name: "Habakkuk", chapters: 3, verses: verseData["Habakkuk"] },
+        { name: "Zephaniah", chapters: 3, verses: verseData["Zephaniah"] },
+        { name: "Haggai", chapters: 2, verses: verseData["Haggai"] },
+        { name: "Zechariah", chapters: 14, verses: verseData["Zechariah"] },
+        { name: "Malachi", chapters: 4, verses: verseData["Malachi"] }
     ],
     gospels: [
-        { name: "Matthew", chapters: 28 },
-        { name: "Mark", chapters: 16 },
-        { name: "Luke", chapters: 24 },
-        { name: "John", chapters: 21 }
+        { name: "Matthew", chapters: 28, verses: verseData["Matthew"] },
+        { name: "Mark", chapters: 16, verses: verseData["Mark"] },
+        { name: "Luke", chapters: 24, verses: verseData["Luke"] },
+        { name: "John", chapters: 21, verses: verseData["John"] }
     ],
     ntHistory: [
-        { name: "Acts", chapters: 28 }
+        { name: "Acts", chapters: 28, verses: verseData["Acts"] }
     ],
     epistles: [
-        { name: "Romans", chapters: 16 },
-        { name: "1 Corinthians", chapters: 16 },
-        { name: "2 Corinthians", chapters: 13 },
-        { name: "Galatians", chapters: 6 },
-        { name: "Ephesians", chapters: 6 },
-        { name: "Philippians", chapters: 4 },
-        { name: "Colossians", chapters: 4 },
-        { name: "1 Thessalonians", chapters: 5 },
-        { name: "2 Thessalonians", chapters: 3 },
-        { name: "1 Timothy", chapters: 6 },
-        { name: "2 Timothy", chapters: 4 },
-        { name: "Titus", chapters: 3 },
-        { name: "Philemon", chapters: 1 },
-        { name: "Hebrews", chapters: 13 },
-        { name: "James", chapters: 5 },
-        { name: "1 Peter", chapters: 5 },
-        { name: "2 Peter", chapters: 3 },
-        { name: "1 John", chapters: 5 },
-        { name: "2 John", chapters: 1 },
-        { name: "3 John", chapters: 1 },
-        { name: "Jude", chapters: 1 }
+        { name: "Romans", chapters: 16, verses: verseData["Romans"] },
+        { name: "1 Corinthians", chapters: 16, verses: verseData["1 Corinthians"] },
+        { name: "2 Corinthians", chapters: 13, verses: verseData["2 Corinthians"] },
+        { name: "Galatians", chapters: 6, verses: verseData["Galatians"] },
+        { name: "Ephesians", chapters: 6, verses: verseData["Ephesians"] },
+        { name: "Philippians", chapters: 4, verses: verseData["Philippians"] },
+        { name: "Colossians", chapters: 4, verses: verseData["Colossians"] },
+        { name: "1 Thessalonians", chapters: 5, verses: verseData["1 Thessalonians"] },
+        { name: "2 Thessalonians", chapters: 3, verses: verseData["2 Thessalonians"] },
+        { name: "1 Timothy", chapters: 6, verses: verseData["1 Timothy"] },
+        { name: "2 Timothy", chapters: 4, verses: verseData["2 Timothy"] },
+        { name: "Titus", chapters: 3, verses: verseData["Titus"] },
+        { name: "Philemon", chapters: 1, verses: verseData["Philemon"] },
+        { name: "Hebrews", chapters: 13, verses: verseData["Hebrews"] },
+        { name: "James", chapters: 5, verses: verseData["James"] },
+        { name: "1 Peter", chapters: 5, verses: verseData["1 Peter"] },
+        { name: "2 Peter", chapters: 3, verses: verseData["2 Peter"] },
+        { name: "1 John", chapters: 5, verses: verseData["1 John"] },
+        { name: "2 John", chapters: 1, verses: verseData["2 John"] },
+        { name: "3 John", chapters: 1, verses: verseData["3 John"] },
+        { name: "Jude", chapters: 1, verses: verseData["Jude"] }
     ],
     prophecy: [
-        { name: "Revelation", chapters: 22 }
+        { name: "Revelation", chapters: 22, verses: verseData["Revelation"] }
     ]
 };
 
@@ -182,11 +182,15 @@ function handleQuickSelect(e) {
 
 // Generate the reading calendar
 function generateCalendar() {
-    const startDate = new Date(document.getElementById('startDate').value);
-    const endDate = new Date(document.getElementById('endDate').value);
+    const startDateValue = document.getElementById('startDate').value;
+    const endDateValue = document.getElementById('endDate').value;
+    
+    // Parse dates in local timezone to avoid timezone issues
+    const startDate = new Date(startDateValue + 'T00:00:00');
+    const endDate = new Date(endDateValue + 'T00:00:00');
     
     // Validate dates
-    if (!startDate || !endDate || startDate >= endDate) {
+    if (!startDateValue || !endDateValue || startDate >= endDate) {
         alert('Please select valid start and end dates.');
         return;
     }
@@ -194,9 +198,19 @@ function generateCalendar() {
     // Get selected books
     const selectedBooks = [];
     document.querySelectorAll('.book-item input[type="checkbox"]:checked').forEach(cb => {
+        const bookName = cb.value;
+        const category = cb.dataset.category;
+        
+        // Find the book in bibleData to get verse information
+        let bookData = null;
+        if (bibleData[category]) {
+            bookData = bibleData[category].find(book => book.name === bookName);
+        }
+        
         selectedBooks.push({
-            name: cb.value,
-            chapters: parseInt(cb.dataset.chapters)
+            name: bookName,
+            chapters: parseInt(cb.dataset.chapters),
+            verses: bookData ? bookData.verses : null
         });
     });
     
@@ -212,44 +226,118 @@ function generateCalendar() {
     displayResults(readingPlan, selectedBooks, startDate, endDate);
 }
 
-// Calculate daily reading assignments
+// Calculate daily reading assignments using verse-based distribution
 function calculateReadingPlan(books, startDate, endDate) {
-    // Calculate total chapters and days
-    const totalChapters = books.reduce((sum, book) => sum + book.chapters, 0);
+    // Calculate total verses and days
     const totalDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24)) + 1;
     
-    // Create list of all chapters
+    // Create list of all chapters with verse counts
     const allChapters = [];
+    let totalVerses = 0;
+    
     books.forEach(book => {
         for (let i = 1; i <= book.chapters; i++) {
-            allChapters.push(`${book.name} ${i}`);
+            const verseCount = book.verses ? book.verses[i - 1] : 25; // Default to 25 if no verse data
+            allChapters.push({
+                reference: `${book.name} ${i}`,
+                verses: verseCount,
+                bookName: book.name
+            });
+            totalVerses += verseCount;
         }
     });
     
-    // Calculate chapters per day
-    const baseChaptersPerDay = Math.floor(totalChapters / totalDays);
-    const extraChapters = totalChapters % totalDays;
+    const totalChapters = allChapters.length;
     
-    // Distribute chapters across days
+    // If we have more days than chapters, just do one chapter per day
+    if (totalDays >= totalChapters) {
+        const readingPlan = [];
+        for (let i = 0; i < allChapters.length; i++) {
+            const currentDate = new Date(startDate.getTime() + (i * 24 * 60 * 60 * 1000));
+            readingPlan.push({
+                date: currentDate,
+                chapters: [allChapters[i].reference],
+                dayNumber: i + 1,
+                totalVerses: allChapters[i].verses
+            });
+        }
+        return readingPlan;
+    }
+    
+    // Calculate ideal distribution
+    const targetVersesPerDay = totalVerses / totalDays;
+    const chaptersPerDay = totalChapters / totalDays;
+    
+    // Use a more balanced distribution algorithm
     const readingPlan = [];
     let chapterIndex = 0;
     
-    for (let dayNum = 0; dayNum < totalDays; dayNum++) {
-        const currentDate = new Date(startDate);
-        currentDate.setDate(startDate.getDate() + dayNum);
+    for (let dayNum = 0; dayNum < totalDays && chapterIndex < allChapters.length; dayNum++) {
+        const currentDate = new Date(startDate.getTime() + (dayNum * 24 * 60 * 60 * 1000));
+        const remainingDays = totalDays - dayNum;
+        const remainingChapters = totalChapters - chapterIndex;
         
-        const chaptersToday = baseChaptersPerDay + (dayNum < extraChapters ? 1 : 0);
-        const todayChapters = allChapters.slice(chapterIndex, chapterIndex + chaptersToday);
+        // Calculate how many chapters we should ideally read today
+        const targetChaptersToday = Math.ceil(remainingChapters / remainingDays);
+        
+        let todayChapters = [];
+        let todayVerses = 0;
+        let chaptersAddedToday = 0;
+        
+        // Add chapters for today
+        while (chapterIndex < allChapters.length && chaptersAddedToday < targetChaptersToday) {
+            const chapter = allChapters[chapterIndex];
+            
+            // For the last day, add all remaining chapters
+            if (dayNum === totalDays - 1) {
+                todayChapters.push(chapter.reference);
+                todayVerses += chapter.verses;
+                chapterIndex++;
+                chaptersAddedToday++;
+            }
+            // If we haven't added any chapters yet, always add at least one
+            else if (chaptersAddedToday === 0) {
+                todayChapters.push(chapter.reference);
+                todayVerses += chapter.verses;
+                chapterIndex++;
+                chaptersAddedToday++;
+            }
+            // If adding this chapter would keep us reasonably close to target verses
+            else if (todayVerses + chapter.verses <= targetVersesPerDay * 1.3) {
+                todayChapters.push(chapter.reference);
+                todayVerses += chapter.verses;
+                chapterIndex++;
+                chaptersAddedToday++;
+            }
+            // If we're significantly under target and have few chapters, add it anyway
+            else if (todayVerses < targetVersesPerDay * 0.7 && chaptersAddedToday < targetChaptersToday) {
+                todayChapters.push(chapter.reference);
+                todayVerses += chapter.verses;
+                chapterIndex++;
+                chaptersAddedToday++;
+            }
+            else {
+                break;
+            }
+        }
         
         if (todayChapters.length > 0) {
             readingPlan.push({
-                date: new Date(currentDate),
+                date: currentDate,
                 chapters: todayChapters,
-                dayNumber: dayNum + 1
+                dayNumber: dayNum + 1,
+                totalVerses: todayVerses
             });
         }
-        
-        chapterIndex += chaptersToday;
+    }
+    
+    // If there are any remaining chapters (shouldn't happen with the new algorithm)
+    while (chapterIndex < allChapters.length) {
+        const lastDay = readingPlan[readingPlan.length - 1];
+        const chapter = allChapters[chapterIndex];
+        lastDay.chapters.push(chapter.reference);
+        lastDay.totalVerses += chapter.verses;
+        chapterIndex++;
     }
     
     return readingPlan;
@@ -263,10 +351,17 @@ function displayResults(readingPlan, selectedBooks, startDate, endDate) {
     // Show results section
     document.querySelector('.results-section').style.display = 'block';
     
-    // Display summary
+    // Calculate totals and averages
     const totalChapters = selectedBooks.reduce((sum, book) => sum + book.chapters, 0);
+    const totalVerses = readingPlan.reduce((sum, day) => sum + day.totalVerses, 0);
     const totalDays = readingPlan.length;
     const avgChaptersPerDay = (totalChapters / totalDays).toFixed(1);
+    const avgVersesPerDay = Math.round(totalVerses / totalDays);
+    
+    // Calculate min and max verses per day
+    const versesPerDay = readingPlan.map(day => day.totalVerses);
+    const minVerses = Math.min(...versesPerDay);
+    const maxVerses = Math.max(...versesPerDay);
     
     const summaryDiv = document.querySelector('.summary');
     summaryDiv.innerHTML = `
@@ -274,8 +369,11 @@ function displayResults(readingPlan, selectedBooks, startDate, endDate) {
         <ul>
             <li>Books selected: ${selectedBooks.length}</li>
             <li>Total chapters: ${totalChapters}</li>
+            <li>Total verses: ${totalVerses.toLocaleString()}</li>
             <li>Duration: ${totalDays} days</li>
             <li>Average chapters per day: ${avgChaptersPerDay}</li>
+            <li>Average verses per day: ${avgVersesPerDay}</li>
+            <li>Daily verse range: ${minVerses} - ${maxVerses} verses</li>
             <li>Start date: ${startDate.toLocaleDateString()}</li>
             <li>End date: ${endDate.toLocaleDateString()}</li>
         </ul>
@@ -363,8 +461,15 @@ function createMonthView(year, month, readings) {
             const readingDiv = document.createElement('div');
             readingDiv.className = 'day-reading';
             readingDiv.textContent = reading.chapters.join(', ');
+            readingDiv.title = `${reading.totalVerses} verses`;
             dayCell.appendChild(readingDiv);
             dayCell.classList.add('has-reading');
+            
+            // Add verse count indicator
+            const verseCount = document.createElement('div');
+            verseCount.className = 'verse-count';
+            verseCount.textContent = `${reading.totalVerses}v`;
+            dayCell.appendChild(verseCount);
         }
         
         grid.appendChild(dayCell);

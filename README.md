@@ -6,13 +6,24 @@ A simple, standalone tool to generate a personalized Bible reading calendar with
 
 - **Book Selection**: Choose from individual books, entire Old/New Testament, or the complete Bible
 - **Flexible Date Range**: Set your own start and end dates for the reading plan
-- **Smart Distribution**: Automatically distributes chapters evenly across your selected time period
-- **Visual Calendar**: Month-by-month calendar view showing daily reading assignments
+- **Verse-Based Distribution**: Smart algorithm that considers verse counts for balanced daily reading time
+  - Takes into account that chapters vary greatly in length (e.g., Psalm 119 has 176 verses, while Psalm 117 has only 2)
+  - Ensures more consistent daily reading time by balancing verse counts
+  - Never splits individual chapters across multiple days
+- **Visual Calendar**: Month-by-month calendar view showing:
+  - Daily reading assignments
+  - Verse count indicators (e.g., "176v") for each day
+  - Color-coded reading days for easy visualization
 - **ICS Export**: Export your reading plan as a .ics file with:
   - Daily events at 6:00 AM
   - Automatic reminders/alerts
   - Compatible with Mac Calendar, Google Calendar, Outlook, etc.
 - **Print-Friendly**: Clean print layout for physical reference
+- **Detailed Statistics**: 
+  - Total verses across selected books
+  - Average verses per day
+  - Daily verse range (minimum and maximum)
+  - Helps you understand the reading commitment
 
 ## How to Use
 
@@ -43,8 +54,11 @@ A simple, standalone tool to generate a personalized Bible reading calendar with
 
 3. **Generate Calendar**:
    - Click the "Generate Calendar" button
-   - Review the summary showing total chapters and daily reading load
-   - View the visual calendar with reading assignments
+   - Review the summary showing:
+     - Total chapters and verses
+     - Average chapters and verses per day
+     - Daily verse range to help gauge reading time
+   - View the visual calendar with reading assignments and verse counts
 
 4. **Export Your Plan**:
    - Click "Export to Calendar (.ics)" to download the calendar file
@@ -82,6 +96,11 @@ A simple, standalone tool to generate a personalized Bible reading calendar with
 - No data is sent to any server
 - Calendar events include daily reminders at 6:00 AM
 - Each reading is scheduled as a 30-minute event (6:00-6:30 AM)
+- Includes complete verse count data for all 31,102 verses in the Bible
+- Uses an intelligent distribution algorithm that:
+  - Balances daily reading by verse count rather than chapter count
+  - Ensures readings span the entire selected date range
+  - Maintains chapter integrity (never splits chapters)
 
 ## Bible Book Categories
 
@@ -100,10 +119,14 @@ The tool organizes the 66 books of the Bible into these categories:
 ## Tips
 
 - For a one-year Bible reading plan, select "Entire Bible" with dates one year apart
-- The tool automatically handles books with different chapter counts
-- Readings maintain book order (won't jump between books mid-chapter)
+- The verse-based algorithm ensures more consistent daily reading time:
+  - A day with Psalm 119 (176 verses) won't have additional chapters
+  - Days with shorter chapters (like 2 John, 3 John) will include more chapters
+- Readings maintain book order (won't jump between books)
+- The calendar shows verse counts for each day to help you plan your reading time
 - Consider printing a backup copy of your calendar
 - You can generate multiple plans for different book selections
+- Average daily reading for the entire Bible over one year is approximately 85 verses
 
 ## Troubleshooting
 
